@@ -136,12 +136,25 @@ img{
 
 .content-wrapper {
   width: 90%;
-  margin: 0 50px;
+  padding: 0 50px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  border: 1px red solid;
+}
+
+hr{
+  display: block;
+  height: .5em;
+  width: 25%;
+  border-top: 3px solid #8a1715;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.line{
+  justify-content: left;
 }
 
 /* ==Base Header & Footer Styles== */
@@ -199,8 +212,71 @@ header .hero {
   flex-flow: row wrap;
 }
 
+.transparent-nav{
+  width: 100%;
+  background-color: #013b46;
+  opacity: .5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  max-height: 50px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.left{
+  width: 25%;
+}
+
+.right{
+  width: 75%;
+}
+
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav img{
+  max-height: 25px;
+}
+
+nav li{
+  padding: 0 20px;
+  text-align: center;
+  font-size: .85em;
+}
+
+/* Nav Link Styles */
+nav li a:link,
+nav li a:visited {
+  color: #e6f2ee;
+  text-decoration: none;
+}
+
 .greeting{
-  padding-top: 75px;
+  font-size: 2.75em;
+  padding-bottom: 200px;
+}
+/* ==Mobile Styles - Intro Section== */
+
+.intro{
+  background-color: #e6f2ee;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 /* ==Mobile Styles - Services Section== */
@@ -218,7 +294,7 @@ header .hero {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .services-icon{
@@ -251,34 +327,13 @@ padding-top: 20px;
   padding: 10px;
 }
 
-/* ==CTA Section== */
-
-.cta{
+/* ==Quote Section== */
+.quote{
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   background-color: #4d6265;
   padding: 40px 0 20px 0;
-}
-
-.calendly i{
-  color: #e6f2ee;
-  font-size: 4em;
-}
-
-.calendly{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-items: center;
-  padding-bottom: 30px;
-  border-bottom: 2px #e6f2ee solid;
-}
-
-.calendly p{
-  width: 50%;
-  color: #e6f2ee;
-  padding-left: 40px;
 }
 
 .quote-text{
@@ -312,12 +367,23 @@ padding-top: 20px;
   flex-flow: row wrap;
 }
 
+.about hr{
+  border-top: 3px solid #e6f2ee;
+}
+
+.about .line{
+  padding-top: 30px;
+  margin-left: 10px;
+  
+}
+
 .about-image{
   background-color: #e6f2ee;
   width: 90%;
 }
 
 .about h2{
+  width: 100%;
   color: #e6f2ee;
 }
 
@@ -331,6 +397,40 @@ padding-top: 20px;
 
 .about .bio{
   margin: 40px 0 40px 10px;
+}
+
+.cta{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding-bottom: 20px; 
+}
+
+.cta h3{
+  font-size: 1.375em;
+  color: #e6f2ee;
+}
+
+.calendly i{
+  color: #e6f2ee;
+  font-size: 3em;
+  padding-right: 30px;
+}
+
+.schedule-button {
+  background-color: #e6f2ee;
+  border: none;
+  color: #1c8da2;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 20px;
+  font-size: 1em;
+}
+
+.schedule-button i {
+  padding: 10px;
 }
 
 /* ==Writing Section== */
@@ -455,6 +555,27 @@ padding-top: 20px;
 
 header .hero{
   min-height: 700px;
+}
+
+.transparent-nav{
+  max-height: 50px;
+  flex-direction: row;
+}
+
+nav ul{
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 5px;
+}
+
+nav a .logo{
+  justify-content: center;
+}
+
+nav img{
+  max-height: 25px;
 }
 
 .services{
