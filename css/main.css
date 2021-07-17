@@ -147,7 +147,7 @@ img{
 hr{
   display: block;
   height: .5em;
-  width: 25%;
+  width: 3em;
   border-top: 3px solid #8a1715;
   margin: 1em 0;
   padding: 0;
@@ -254,7 +254,7 @@ nav img{
 nav li{
   padding: 0 20px;
   text-align: center;
-  font-size: .85em;
+  font-size: 1em;
 }
 
 /* Nav Link Styles */
@@ -360,21 +360,16 @@ padding-top: 20px;
 
 /* ==About Section== */
 
-.about{
+.about, .cta{
   background-color: #1c8da2;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
 }
 
-.about hr{
+.about hr, .cta hr{
   border-top: 3px solid #e6f2ee;
 }
 
-.about .line{
-  padding-top: 30px;
-  margin-left: 10px;
-  
+.about .line, .cta .line{
+  padding-top: 30px;  
 }
 
 .about-image{
@@ -383,7 +378,6 @@ padding-top: 20px;
 }
 
 .about h2{
-  width: 100%;
   color: #e6f2ee;
 }
 
@@ -396,27 +390,27 @@ padding-top: 20px;
 }
 
 .about .bio{
-  margin: 40px 0 40px 10px;
+  margin: 30px 0 30px 10px;
 }
 
-.cta{
+.about, .cta{
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  padding-bottom: 20px; 
+  padding: 10px 20px; 
 }
 
-.cta h3{
-  font-size: 1.375em;
+.cta h3, .cta p{
+  font-size: 1.275em;
   color: #e6f2ee;
+  text-align: center;
 }
 
-.calendly i{
-  color: #e6f2ee;
-  font-size: 3em;
-  padding-right: 30px;
+.schedule-button i{
+  color: #1c8da2;
+  font-size: 1.5em;
+  padding: 5px;
 }
 
 .schedule-button {
@@ -425,12 +419,8 @@ padding-top: 20px;
   color: #1c8da2;
   text-align: center;
   text-decoration: none;
-  padding-left: 20px;
-  font-size: 1em;
-}
-
-.schedule-button i {
-  padding: 10px;
+  font-size: 1.5em;
+  margin-top: 10px;
 }
 
 /* ==Writing Section== */
@@ -450,6 +440,34 @@ padding-top: 20px;
   margin: 0;
   padding: 0 10px 40px 10px;
   display: flex;
+  flex-flow: row wrap;
+}
+
+
+/* ==Mobile Styles - SERVICES PAGE == */
+
+header .services-hero{
+  background: url(../img/krista-lake.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* ==Mobile Styles - CONTACT PAGE == */
+header .contact-hero{
+  background: url(../img/Users/aliciacoombes/Documents/personal-web-projects/lane website v1.5/img/scott-graham-EPppwcVTZEo-unsplash.jpgkrista-lake.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
