@@ -220,7 +220,7 @@ header .hero {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  max-height: 50px;
+  max-height: 60px;
 }
 
 nav{
@@ -243,7 +243,7 @@ nav ul{
   flex-direction: row;
   align-items: center;
   list-style: none;
-  padding: 0;
+  padding: 10px 0;
   margin: 0;
 }
 
@@ -313,7 +313,7 @@ padding-top: 20px;
 .services-button {
   background-color: #8a1715;
   border: none;
-  color: white;
+  color: #e6f2ee;
   text-align: center;
   text-decoration: none;
   padding-left: 20px;
@@ -321,6 +321,10 @@ padding-top: 20px;
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+}
+
+.services-button a{
+  color: #e6f2ee
 }
 
 .services-button i {
@@ -452,9 +456,42 @@ header .services-hero{
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  min-height: 300px;
+  max-height: 300px;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
+}
+
+header .services-greeting{
+  color: #013b46;
+  font-size: 2.75em;
+  padding-bottom: 200px;
+}
+
+.services-section{
+  background-color: #e6f2ee;
+}
+
+.services-section h2{
+  padding: 15px 0;
+  font-size: 1.75em;
+  color: #013b46
+}
+
+.services-section h3{
+  padding-bottom: 15px;
+  font-size: 1.25em;
+  text-align: center;
+  margin: 0;
+}
+
+.services-content-wrapper{
+  width: 75%;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -465,12 +502,67 @@ header .contact-hero{
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  min-height: 500px;
+  max-height: 300px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
+header .contact-greeting{
+  color: #013b46;
+  font-size: 2.75em;
+  padding-bottom: 200px;
+}
+
+.contact-section{
+  background-color: #e6f2ee;
+}
+
+.contact-section h2{
+  padding: 15px 0;
+  font-size: 1.75em;
+}
+
+.contact-social-icons{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 75%;
+}
+
+.contact-content-wrapper{
+  width: 75%;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-social-icons i{
+  color: #013b46;
+  font-size: 3em;
+}
+
+.contact-schedule-button i{
+  color: #013b46;
+  font-size: 1.5em;
+  padding: 5px;
+
+}
+
+.contact-schedule-button {
+  background-color:#e6f2ee;
+  border: 1px #013b46 solid;
+  color: #013b46;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+  padding: 5px 10px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -563,8 +655,8 @@ header .contact-hero{
 /* ====== Tablet Styles ======= */
 
 .greeting{
-  font-size: 3.75em;
-  padding-top: 120px;
+  font-size: 3.65em;
+  padding-bottom: 250px;
 }
 
 .content-wrapper {
@@ -588,12 +680,18 @@ nav ul li {
   margin-right: 5px;
 }
 
+nav li{
+  padding: 0 20px;
+  text-align: center;
+  font-size: 1.25em;
+}
+
 nav a .logo{
   justify-content: center;
 }
 
 nav img{
-  max-height: 25px;
+  max-height: 30px;
 }
 
 .services{
@@ -611,7 +709,6 @@ nav img{
   display: flex;
   flex-flow: row wrap;
 }
-
 .services-icon{
   width: 40%;
   padding-top: 20px;
@@ -628,9 +725,23 @@ nav img{
   align-items: flex-start;
 }
 
-.cta{
-  width: 100%;
+.callout-content-wrapper{
+  width: 50%;
+  padding: 0;
+  margin: auto;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.cta .content-wrapper{
+  width: 50%;
+}
+
+.schedule-button{
+  padding: 5px 10px;
+  margin: 10px;
 }
 
 .calendly{
@@ -655,8 +766,10 @@ nav img{
   width: 100%;
 }
 
-.about .about-image, .bio{
-  width: 49%;
+
+.about-image{
+  width: 30%;
+  margin-bottom: 30px;
 }
 
 .about p{
@@ -719,9 +832,21 @@ header .hero {
   min-height: 900px;
 }
 
+.transparent-nav{
+  max-height: 60px;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav img{
+  max-height: 50px;
+}
+
 .greeting{
-  font-size: 5.5em;
-  padding-top: 120px;
+  font-size: 5em;
+  padding-bottom: 350px;
 }
 
 .services article{
@@ -746,6 +871,9 @@ header .hero {
   margin: 0;
 }
 
+.services-button{
+  margin-left: 50px;
+}
 .about .content-wrapper{
   justify-content: space-around;
   margin-top: 0;
@@ -779,6 +907,16 @@ header .hero {
 
 .about{
   padding-bottom: 20px;
+}
+
+.cta h3, .cta p{
+  font-size: 1.275em;
+  color: #e6f2ee;
+  text-align: left;
+}
+
+.schedule-button{
+  margin-left: 50px;
 }
 
 .writing .content-wrapper, .contact .content-wrapper{
