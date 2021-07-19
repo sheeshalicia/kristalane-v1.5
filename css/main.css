@@ -405,7 +405,14 @@ padding-top: 20px;
   padding: 10px 20px; 
 }
 
-.cta h3, .cta p{
+.cta h2{
+  font-size: 1.75em;
+  color: #e6f2ee;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.cta p{
   font-size: 1.275em;
   color: #e6f2ee;
   text-align: center;
@@ -414,7 +421,7 @@ padding-top: 20px;
 .schedule-button i{
   color: #1c8da2;
   font-size: 1.5em;
-  padding: 5px;
+  padding: 10px;
 }
 
 .schedule-button {
@@ -422,9 +429,13 @@ padding-top: 20px;
   border: none;
   color: #1c8da2;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   font-size: 1.5em;
   margin-top: 10px;
+  padding-left: 20px;
 }
 
 /* ==Writing Section== */
@@ -739,6 +750,35 @@ nav img{
   width: 50%;
 }
 
+.cta h2{
+  font-size: 2.5em;
+  color: #e6f2ee;
+  text-align: center;
+  width: 100%;
+}
+
+.cta p{
+  font-size: 1.275em;
+  color: #e6f2ee;
+  text-align: center;
+}
+
+.schedule-button i{
+  color: #1c8da2;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+.schedule-button {
+  background-color: #e6f2ee;
+  border: none;
+  color: #1c8da2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
 .schedule-button{
   padding: 5px 10px;
   margin: 10px;
@@ -909,11 +949,6 @@ nav img{
   padding-bottom: 20px;
 }
 
-.cta h3, .cta p{
-  font-size: 1.275em;
-  color: #e6f2ee;
-  text-align: left;
-}
 
 .schedule-button{
   margin-left: 50px;
