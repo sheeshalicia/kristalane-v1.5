@@ -488,11 +488,11 @@ padding-top: 20px;
 }
 
 .blog__content{
-  padding: .8rem;
+  padding: 5px;
 }
 
 .blog__preview{
-  font-size: .95rem;
+  font-size: .95em;
   font-weight: 300;
 }
 
@@ -506,8 +506,6 @@ padding-top: 20px;
 .blog__intro{
   line-height: 1em;
 }
-
-
 
 
 /* ==Mobile Styles - SERVICES PAGE == */
@@ -872,6 +870,15 @@ nav img{
   margin: 0 0 20px 0;
 }
 
+.blog__post{
+  margin: 10px;
+  max-width: 45%;
+  border: 2px solid #1c8da2;
+}
+
+.blog__slider{
+  justify-content: space-between;
+}
 
 footer .contact{
   align-items: center;
@@ -1007,6 +1014,17 @@ nav img{
 
 .writing .content-wrapper, .contact .content-wrapper{
   margin-top: 0;
+}
+
+
+.blog__post{
+  margin: 10px;
+  max-width: 30%;
+  border: 2px solid #1c8da2;
+}
+
+.blog__slider{
+  justify-content: space-around;
 }
 
 footer .social-icons i{
