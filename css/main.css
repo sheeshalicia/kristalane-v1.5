@@ -470,12 +470,11 @@ padding-top: 20px;
   text-align: center;
   margin-top: .3rem;
   padding: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 500;
 }
 
 .blog__slider{
-  padding: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -579,8 +578,9 @@ header .contact-greeting{
 }
 
 .contact-section h2{
-  padding: 15px 0;
+  padding: 20px 0 50px 0px;
   font-size: 1.75em;
+  width: 100%;
 }
 
 .contact-social-icons{
